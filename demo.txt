@@ -1,0 +1,51 @@
+hp Pavilion : https://www.flipkart.com/hp-pavilion-gaming-ryzen-5-hexa-core-4600h-8-gb-1-tb-hdd-windows-10-home-4-gb-graphics-nvidia-geforce-gtx-1650-15-ec1021ax-laptop/p/itm70c8fb9efbb8c?pid=COMFT8GXGSJZKAAE&lid=LSTCOMFT8GXGSJZKAAEFE91VM&marketplace=FLIPKART&q=laptop&store=6bo%2Fb5g&srno=s_1_24&otracker=search&otracker1=search&fm=SEARCH&iid=en_N4h1IYSOvMXs8OwGbms6bGcUCk5COU68o8teQI71mK67%2BBaobOMpC1mISaB42uBrGUbAtKih2F3AAwFkykHwzg%3D%3D&ppt=browse&ppn=browse&ssid=o4rwe1gu680000001640412234085&qH=312f91285e048e09
+https://www.croma.com/hp-pavilion-15-ec1023ax-183l8pa-acj-ryzen-5-windows-10-home-gaming-laptop-8gb-ram-1tb-hdd-256gb-ssd-nvidia-geforce-gtx-1650-ti-+-4gb-graphics-39-62cm-shadow-black-/p/240739
+lenovo ideapad 3
+lenovo Ideapad Flex 5
+HP Core i3 11th Gen
+
+home icon
+<i class="feather icon-home"></i>
+
+         <script type="text/javascript">
+            grandtotal();
+              let elementsArray = document.querySelectorAll(".quantity-input");
+
+              elementsArray.forEach(function(elem) {
+                  elem.addEventListener("input", function(e) {
+                      //this function does stuff
+                      // alert("test");
+                      let total = event.target.parentElement.parentElement.querySelectorAll('.total')[0];
+                      let qty = event.target.value;
+                      let price = event.target.getAttribute("data-price");
+                      // console.log(qty);
+                      // console.log(price);                      
+                      // console.log(total);
+
+                      total.innerHTML = '$' + qty*price;
+                      total.setAttribute('data-mrp' , qty*price);
+                      grandtotal();
+                  });
+              });
+              
+              function grandtotal(){
+                // alert('test');
+                let row = document.querySelectorAll("#table-display tbody tr");
+
+                let totalprice = 0;
+              row.forEach(function(elem) {
+                // console.log(elem);
+
+                totalprice += parseFloat(elem.querySelectorAll('.total')[0].getAttribute('data-mrp'));
+                // console.log(totalprice); 
+                document.getElementById("grandTotal").innerHTML ='$' + totalprice;
+                  });
+
+<td class="valign-center"><div id="price">$<?php echo $row['mrp']; ?></div></td>                                         
+<td class="valign-center"><span class="total" data-mrp="<?php echo $row['mrp']; ?>">$<?php echo $row['mrp']; ?></span></td> 
+<td> <span id="grandTotal"></span></td>
+
+
+https://www.fundaofwebit.com/php-firebase/firebase-in-php-4-how-to-retrieve-data-from-firebase
+https://askubuntu.com/questions/17251/how-to-make-an-ubuntu-live-usb-stick-in-fedora
+https://github.com/JnCrMx/DynamicWallpaper/tree/master/src/main/java/de/jcm/dynamicwallpaper

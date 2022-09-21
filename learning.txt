@@ -1,0 +1,55 @@
+<div class="width_full slider-border">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <?php
+      for($i = 0; $i < $result->num_rows; $i++){ 
+        $class = $i == 0 ? 'active' : '';
+        ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>" class="<?php echo $class; ?>">
+
+            </li>
+            <?php
+      }
+        ?>
+        </ol>
+        <div class="carousel-inner">
+            <?php
+          $flag="true";
+        while($row = $result->fetch_assoc()){
+          $c = "";
+          if($flag)
+          {
+            $flag = false;
+            $c = "active";
+          }
+          ?>
+            <!-- <div class="width_full slider-border">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"> -->
+            <div class="item <?php echo $c; ?>"> <img src="<?php echo SLIDER_UPLOAD. $row['image']; ?> "
+                    style="width:100%" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1><?php echo $row['name']; ?></h1>
+                        <h2>50% off</h2>
+                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do </p>
+                        <a class="shopnow-btn" href="#" role="button">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <?php
+          }
+          ?>
+        </div>
+    </div>
+</div>
+<?php
+    }
+}
+    ?>
+
+vscode://vscode.github-authentication/did-authenticate?windowid=1&code=4206d497d3b1105f9c1e&state=d8ca0d61-96fd-4098-91d2-4cee17ca50da 
+
+https://www.udemy.com/course/learn-c-game-development/
+
+$count = $slider->count_data();

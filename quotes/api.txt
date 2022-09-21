@@ -1,0 +1,3 @@
+apis
+http://sam.rahul-shradha.svs152//quotes/addquotes.php : POST
+http://sam.rahul-shradha.svs152/quotes/selectqquotes.php : GET
